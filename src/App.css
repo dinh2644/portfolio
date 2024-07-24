@@ -1,0 +1,622 @@
+
+* {
+	margin: 0 !important;
+	padding: 0 !important;
+	scroll-behavior: smooth !important;
+	
+}
+
+@font-face {
+	font-family: "PonteVecchioNFW01-Regular";
+	src: url(./assets/fonts/PonteVecchioNFW01Regular.ttf);
+}
+
+@font-face {
+	font-family: "Baskerville Old Face";
+	src: url(./assets/fonts/BaskervilleOldFace.ttf);
+}
+
+@font-face {
+	font-family: "Times New Roman";
+	src: url(./assets/fonts/TimesNewRoman.ttf);
+}
+
+@font-face {
+	font-family: "Granjon";
+	src: url(./assets/fonts/Granjon.ttf);
+}
+
+/* Prevent side scrolling on mobile view */
+
+body .container {
+	overflow: hidden !important;
+	
+	
+}
+
+/* Sticky side nav */
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: fixed !important;
+	right: 0 ;
+	bottom: 30% ;
+	background-color: transparent;
+	transition: opacity 1s;
+	opacity: 0 ;
+	z-index: 999;
+	pointer-events: none;
+}
+
+.navbar.reveal {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.nav .nav-item a {
+	font-family: 'Granjon';
+	text-decoration: none ;
+	color: black;
+	
+}
+
+/********************************** MAIN PAGE **********************************/
+
+/* Table of content positioning */
+.mainContainer {
+	margin: 200px 0 auto !important;
+	position: relative !important;
+}
+
+/* removes scrollbar*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	
+}
+
+.container-fluid section .content {
+	max-width: max-content;
+	
+}
+
+.projLinks{
+	text-decoration: none;
+	color:steelblue;
+	font-weight: 700;
+}
+
+/* Tu Dinh */
+#tuDinh {
+	font-family: 'PonteVecchioNFW01-Regular' !important;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 75px;
+	letter-spacing: .30em;
+	color: #000000;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.sweCaption{
+	font-family: 'Granjon';
+	font-style: normal;
+	font-size: 2rem;
+}
+
+@keyframes sparkle {
+	0% {
+	  left: -100px;
+	}
+	100% {
+	  left: calc(100% + 100px);
+	}
+  }
+  
+  .sparkle-effect {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .sparkle-effect::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 100px;
+	height: 100%;
+	background: linear-gradient(
+	  to right,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.8) 50%,
+	  rgba(255, 255, 255, 0) 100%
+	);
+	animation: sparkle 4s linear infinite;
+  }
+/* Enso circle */
+#ensoCircle {
+	width: 400px;
+	height: auto;
+}
+
+/* Contents */
+#contents {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3rem;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+	
+}
+
+/* Accordiion */
+.aboutSummary,
+.skillsSummary,
+.projectsSummary,
+.expSummary {
+	font-family: 'Baskerville Old Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	letter-spacing: 0.25em;
+	color: #000000;
+	position: relative;
+	cursor: pointer;
+	
+}
+
+#expText{
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.accordLinks {
+	text-decoration: none !important;
+}
+
+.projectsSummary a,
+.skillsSummary a,
+.expSummary a {
+	color: #000000 !important;
+	text-decoration: none !important;
+}
+
+#tuDinh,
+#contents {
+	pointer-events: none;
+}
+
+.accordionRow {
+	max-width: 630px;
+}
+
+summary {
+	list-style: none;
+}
+
+
+.accordion .contentBx .aboutSummary:after {
+	/* line 1*/
+	content: "";
+	position: absolute;
+	bottom: 18px;
+	left: 105px;
+	right: 25px;
+	border-bottom: 1px solid black;
+	z-index: -1;
+}
+
+.skillsSummary:after {
+	/* line 2*/
+	content: "";
+	position: absolute;
+	bottom: 18px;
+	left: 98px;
+	right: 42px;
+	border-bottom: 1px solid black;
+	z-index: -1;
+}
+
+.projectsSummary:after {
+	/* line 3*/
+	content: "";
+	position: absolute;
+	bottom: 18px;
+	left: 140px;
+	right: 42px;
+	border-bottom: 1px solid black;
+	z-index: -1;
+}
+
+.expSummary:after {
+	/* line 3*/
+	content: "";
+	position: absolute;
+	bottom: 18px;
+	left: 185px;
+	right: 45px;
+	border-bottom: 1px solid black;
+	z-index: -1;
+}
+
+.accordion .contentBx.active .indexNum {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	transition: 0.5s;
+	
+}
+
+.accordion .contentBx .indexNum {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	transition: 0.5s;
+
+}
+
+.accordion .contentBx .content {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+
+.skillsContent{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+
+.projectsContent{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+	height: 240px;
+}
+
+.accordion .contentBx.active .skillsContent {
+	height: 200px;
+}
+
+.accordion .contentBx.active .projectsContent {
+	height: 215px;
+}
+
+
+#aboutLogos {
+	margin-left: 3px !important;
+}
+
+.resume{
+	vertical-align: middle;
+	text-decoration: none;
+	color:steelblue;
+	font-weight: 700;
+}
+
+#aboutLogos a {
+	text-decoration: none;
+	opacity: 0.8;
+	margin-right: 9px !important;
+}
+
+#aboutLogos a img {
+	margin-top: -1px !important;
+	transition: 0.5s !important;
+}
+
+#aboutLogos a img:hover {
+	opacity: 0.7;
+}
+
+/* Index numbers */
+.indexNum {
+	float: right;
+	font-family: 'Times New Roman';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 25px;
+	color: #000000;
+}
+
+/* About description */
+.aboutDesc {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 220.5%;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin-top: 25px !important;
+	font-size: clamp(13px, 3vw, 16px);	
+	
+}
+
+/********************************** PROJECTS PAGE **********************************/
+.projects {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+.card {
+	width: 400px !important;
+	height: 300px !important;
+	margin: 20px !important;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+	border-radius: 10px !important;
+	overflow: hidden !important;
+	border: none !important;
+}
+
+.PC1 {
+	background: url('./assets/img/arV1Proj.png') center / cover !important;
+}
+
+.PC2 {
+	background: url('./assets/img/portV1Proj.png') center / cover !important;
+	object-fit: cover;
+}
+
+.PC3 {
+	background: url('./assets/img/arV2Proj.png') center / cover !important;
+}
+
+.PC4 {
+	background: url('./assets/img/javaProj.png') center / cover !important;
+}
+.PC5 {
+	background: url('./assets/img/spellchecker-pic.png') center / cover !important;
+}
+.PC6 {
+	background: url('./assets/img/codehub.png') center / cover !important;
+}
+
+.card .img-description {
+	padding-top: 50px !important;
+	color: white;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+	background-color: rgba(6, 6, 6, 0.5);
+	height: 110%;
+	width: 100%;
+	font-family: 'Granjon' !important;
+}
+
+.card:hover .img-description {
+	opacity: 1 !important;
+
+}
+
+.img-description h2 {
+	display: block !important;
+	font-size: 25px !important;
+	font-weight: bold;
+	letter-spacing: 0.05em !important;
+	text-align: center !important;
+	font-family: 'Granjon' !important;
+}
+
+.img-description p {
+	padding-top: 25px !important;
+	margin: 20px !important;
+	text-align: center !important;
+	font-size: 18px !important;
+	font-family: 'Granjon' !important;
+	letter-spacing: 0;
+}
+
+
+/********************************** EXPERIENCE PAGE **********************************/
+.experience {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+.tabs {
+	line-height: normal;
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+.tabs .tab-indicator {
+	position: absolute;
+	width: 2px;
+	height: 47px;
+	background: darkgoldenrod;
+	left: 217px;
+	top: 1px;
+	transition: all 500ms ease-in-out;
+}
+
+.tabs .tabHeader {
+	border-right: 1px solid rgba(10, 11, 49, 0.20);
+}
+
+.tab-pane {
+	padding-left: 50px !important;
+}
+
+.tab-pane img {
+	float: left;
+}
+
+#treasTitle {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000;
+}
+
+#treasDuration {
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.treasDesc>li {
+	list-style-type: none;
+}
+
+.treasDesc li::before {
+	content: "➢ ";
+}
+
+.treasDesc {
+	font-size: 17px;
+	color: black;
+	margin-left: 125px !important;
+	margin-top: 20px !important;
+}
+
+.tabHeader {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 220%;
+	letter-spacing: 0.15em;
+	color: #000000 !important;
+	padding: 7px !important;
+}
+
+.treasTitleDuration {
+	margin-left: 120px !important;
+	position: relative;
+	top: -6px;
+}
+
+.br {
+	display: block !important;
+	margin-bottom: 1.1em !important;
+	font-family: 'granjon';
+}
+
+.tab-header>div:hover,
+.tab-header>div.active {
+	color: darkgoldenrod !important;
+	cursor: pointer;
+}
+
+
+.fadeInUp {
+	animation: fadeInUp !important;
+	/* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s !important;
+	/* don't forget to set a duration! */
+}
+
+#phoneNav {
+	position: absolute;
+}
+
+#phoneNav a {
+	font-family: 'Granjon';
+	display: none;
+	text-decoration: none;
+	color: black;
+}
+
+.dinh {
+	font-family: 'PonteVecchioNFW01-Regular';
+	line-height: 500%;
+	letter-spacing: 0.15em;
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+/*Handle dark mode*/
+/* Define CSS variables for colors */
+:root {
+	--text-color: black !important; /* Default text color */
+	--background-color: white; /* Default background color */
+  }
+  
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  --text-color: white !; /* Text color for dark mode */
+	  --background-color: #000000; /* Background color for dark mode */
+	}
+  }
+  
+  /* Use CSS variables for text and background colors */
+  body {
+	color: var(--text-color);
+	background-color: var(--background-color);
+  }
+  
+  /* Update text and background colors for specific elements */
+  .nav .nav-item a {
+	color: var(--text-color) !important;
+  }
+  
+  /* Add dark mode styles for other elements as needed */
+  /* For example, update card backgrounds */
+  .card {
+	background-color: var(--background-color) !important;
+	/* Add more styles for dark mode as needed */
+  }
+  
+  /* Update text colors for different sections */
+  #tuDinh,
+  #contents,
+  .aboutSummary,
+  .projectsSummary,
+  .expSummary,
+  .indexNum,
+  .aboutDesc,
+  .projects,
+  .experience,
+  .tabHeader,
+  .treasTitle,
+  .treasDuration,
+  .treasDesc,
+  .tabHeader {
+	color: var(--text-color) !important;
+  }

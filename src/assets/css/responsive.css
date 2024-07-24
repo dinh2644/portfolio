@@ -1,0 +1,123 @@
+/* xl */
+@media only screen and (max-width: 1400px) {
+	.tabs .tab-indicator {
+		left: 188px;
+		top: 1px;
+	}
+}
+
+/* lg */
+@media only screen and (max-width: 1200px) {
+	.tabs .tab-indicator {
+		left: 157px;
+		top: 1px;
+	}
+
+	.tabHeader {
+		font-size: 14px;
+	}
+}
+
+/* md */
+@media only screen and (max-width: 992px) {
+	.tabs .tab-indicator {
+		display: none;
+	}
+
+	.tabHeader {
+		border-right: none !important;
+		float: left;
+		text-align: center;
+		flex: 0 0 auto;
+		width: 50%;
+	}
+
+	.treasDesc {
+		padding-top: 25px !important;
+		margin: 0 !important;
+	}
+
+	.tab-pane {
+		padding-left: 0 !important;
+	}
+}
+
+/* sm */
+@media only screen and (max-width: 768px) {
+	.tab-pane {
+		padding-left: 0 !important;
+	}
+
+	.treasDesc {
+		margin: 0 !important;
+	}
+}
+
+/* xs */
+@media only screen and (max-width: 576px) {
+
+	.PC1,
+	.PC2,
+	.PC3,
+	.PC4 {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.card .img-description {
+		padding-top: 25px !important;
+	}
+
+	.accordionRow {
+		width: fit-content;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+
+	.tab-pane {
+		margin: 10px !important;
+	}
+
+	.navbar {
+		display: none !important;
+	}
+
+	#phoneNav a {
+		display: inline !important;
+	}
+
+	#phoneNav #slide {
+		display: flex;
+		justify-content: end !important;
+	}
+
+	#phoneNav {
+		right: 0;
+		margin-right: 5px !important;
+		margin-top: -5px !important;
+	}
+	#ensoCircle {
+		width: 300px;
+	}
+	
+	#tuDinh {
+		font-size: 50px !important;
+	}
+	
+	.sweCaption{
+		font-size: 1.5rem;
+	}
+
+	#contents{
+		font-size: 2rem;
+	}
+	
+
+}
+
+/* < 300px */
+@media only screen and (max-width: 300px) {
+	.aboutDesc {
+		font-size: 11px;
+	}
+}
