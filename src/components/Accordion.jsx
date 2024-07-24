@@ -46,7 +46,7 @@ const Accordion = () => {
                     <a href="mailto:dinh2644.mail@gmail.com">
                       <img
                         src={Envelope}
-                        alt="https://tudinh.vercel.app/"
+                        alt="https://tudinh.me/"
                         width="15"
                         height="15"
                         title="email"
@@ -55,7 +55,7 @@ const Accordion = () => {
                     <a href="https://www.linkedin.com/in/dinh2644/">
                       <img
                         src={LinkedIn}
-                        alt="https://tudinh.vercel.app/"
+                        alt="https://tudinh.me/"
                         width="15"
                         height="15"
                         title="LinkedIn"
@@ -64,7 +64,7 @@ const Accordion = () => {
                     <a href="https://github.com/dinh2644">
                       <img
                         src={GitHub}
-                        alt="https://tudinh.vercel.app/"
+                        alt="https://tudinh.me/"
                         width="15"
                         height="15"
                         title="GitHub"

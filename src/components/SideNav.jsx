@@ -26,7 +26,7 @@ const SideNav = () => {
     <nav className={`navbar ${reveal ? "reveal" : ""}`}>
       <ul className="nav flex-column translate-middle text-end">
         <li className="nav-item">
-          <a className="nav-link" href="#aboutAnchor">
+          <a className="nav-link" href="#about">
             About
           </a>
         </li>
@@ -37,19 +37,19 @@ const SideNav = () => {
         </li>
         <li className="nav-item flex-row">
           <a href="mailto:dinh2644.mail@gmail.com" className="ms-1">
-            <img src={Envelope} alt="https://tudinh.vercel.app/" width="17" height="17" title="Email" />
+            <img src={Envelope} alt="https://tudinh.me/" width="17" height="17" title="Email" />
           </a>
           <a href="https://www.linkedin.com/in/dinh2644/" className="ms-2">
             <img
               src={LinkedIn}
-              alt="https://tudinh.vercel.app/"
+              alt="https://tudinh.me/"
               width="17"
               height="17"
               title="LinkedIn"
             />
           </a>
           <a href="https://github.com/dinh2644" className="ms-2">
-            <img src={GitHub} alt="https://tudinh.vercel.app/" width="17" height="17" title="GitHub" />
+            <img src={GitHub} alt="https://tudinh.me/" width="17" height="17" title="GitHub" />
           </a>
         </li>
       </ul>

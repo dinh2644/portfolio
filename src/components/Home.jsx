@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <SideNav />
-      <section id="aboutAnchor">
+      <section id="about">
         <div
           className="container-fluid mainContainer"
           data-aos="fade-up"
@@ -29,7 +29,7 @@ const Home = () => {
             {/* Logo */}
             <div className="row">
               <div className="col d-flex justify-content-center">
-                <img src={EnsoCircle} alt="https://tudinh.vercel.app/" id="ensoCircle" />
+                <img src={EnsoCircle} alt="https://tudinh.me/" id="ensoCircle" />
               </div>
             </div>
           </div>

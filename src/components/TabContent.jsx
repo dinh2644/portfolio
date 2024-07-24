@@ -15,7 +15,7 @@ const TabContent = ({ activeTab }) => {
               data-aos-duration="500"
               key={index}
             >
-              <img src={exp.img} alt="https://tudinh.vercel.app/" width="70" height="70" />
+              <img src={exp.img} alt="https://tudinh.me/" width="70" height="70" />
               <div className="treasTitleDuration" id="treasTitle">
                 {exp.role} <br />
                 <span id="treasDuration">{exp.period}</span>
