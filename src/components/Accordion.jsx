@@ -70,9 +70,9 @@ const Accordion = () => {
                         title="GitHub"
                       />
                     </a>
-                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1QeBtujjF2ZwxRGtwR-oZfKc_XxP6tjUz/view?usp=sharing">Resume</a></strong>
-                  </span> 
-                  
+                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1iiHJVk_vYsTwCAHQGpStenIjaFXqEiHx/view?usp=sharing">Resume</a></strong>
+                  </span>
+
                 </p>
               </div>
             </div>
@@ -87,45 +87,45 @@ const Accordion = () => {
                 Skills <span className="indexNum">25</span>
               </div>
               <div className="skillsContent aboutDesc content">
-              - <strong>Languages:</strong> JavaScipt, Python, C++, C#, C, SQL, Java <br /> 
-              - <strong>Software and DB:</strong> SQL Server, MongoDB, supabase, SharePoint, MongoDB <br />
-              - <strong>Additional:</strong> HTML/CSS, React, Node.js, Express.js <br />
-              - <strong>Certifications:</strong> Lyft Back-End Engineering Job Sim, CodePath's Intermediate Web Development
-            </div>
-          </div>
-          {/* PROJECTS */}
-          <div className="accordion">
-            <div
-              className={`contentBx ${projectsContentBx ? "active" : ""}`}
-              onClick={() => handleProjectsBx()}
-            >
-              <div className="projectsSummary">
-                Projects <span className="indexNum">33</span>
-              </div>
-              <div className="projectsContent aboutDesc">
-                <ul>
-                  <li className="mb-2">- <a className="projLinks" href="https://github.com/dinh2644/quikblok">QuikBlok</a>: a minimal MERN app designed to help users easily store their account information in an accessible way. </li>
-                  <li className="mb-2">- <a className="projLinks" href="https://github.com/dinh2644/http-server">HTTP Server</a>: a simple HTTP server</li>
-                  <li>- <a className="projLinks" href="https://github.com/dinh2644/spellchecker">Spellchecker</a>: utilizes a trie data structure returning back misspelled words from an input text</li>
-                 
-                </ul>
+                - <strong className="projLinksSkills">Languages:</strong> JavaScipt, Python, GoLang, C++, C#, C, SQL, Java <br />
+                - <strong className="projLinksSkills">Software and DB:</strong> SQL Server, SharePoint, MongoDB, Supabase, Firebase <br />
+                - <strong className="projLinksSkills">Additional:</strong> HTML/CSS/Bootstrap/Tailwind CSS, React/Next.js, Git, GitHub, FastAPI, BullMQ/Redis, Gemini API <br />
+                - <strong className="projLinksSkills">Certifications:</strong> Lyft Back-End Engineering Job Sim, CodePath's Intermediate Web Development
               </div>
             </div>
-          </div>
-         
-          {/* EXPERIENCE */}
-          <div className="accordion">
-            <div className="contentBx">
-              <a href="#experienceAnchor" className="accordLinks">
-                <div className="expSummary">
-                  Experience <span className="indexNum">41</span>
+            {/* PROJECTS */}
+            <div className="accordion">
+              <div
+                className={`contentBx ${projectsContentBx ? "active" : ""}`}
+                onClick={() => handleProjectsBx()}
+              >
+                <div className="projectsSummary">
+                  Projects <span className="indexNum">33</span>
                 </div>
-              </a>
+                <div className="projectsContent aboutDesc">
+                  <ul>
+                    <li className="mb-2">- <span className="projLinks">Basic-Event-Notification-System</span>: a distributed event notification system where multiple nodes can broadcast events (like stock price changes or sports scores) to other nodes. Ensure events are reliably propagated across nodes with basic mechanisms for message ordering and duplication prevention. </li>
+                    <li className="mb-2">- <span className="projLinks">LiveLingo</span>: a transcript translation web app to make non-English YouTube content accessible to English-speaking audiences. </li>
+                    <li>- <span className="projLinks">Password-Manager</span>: a MERN stack CRUD web app, allowing users to create and store account information through cards for easy lookup. Also implements "Bcrypt" for user authentication and storing salted + hashed passwords.</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* EXPERIENCE */}
+            <div className="accordion">
+              <div className="contentBx">
+                <a href="#experienceAnchor" className="accordLinks">
+                  <div className="expSummary">
+                    Experience <span className="indexNum">41</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-     </div> 
     </>
   );
 };

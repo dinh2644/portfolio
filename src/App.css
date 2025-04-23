@@ -1,9 +1,8 @@
-
 * {
 	margin: 0 !important;
 	padding: 0 !important;
 	scroll-behavior: smooth !important;
-	
+
 }
 
 @font-face {
@@ -30,8 +29,8 @@
 
 body .container {
 	overflow: hidden !important;
-	
-	
+
+
 }
 
 /* Sticky side nav */
@@ -40,11 +39,11 @@ body .container {
 	flex-direction: column;
 	align-items: flex-end;
 	position: fixed !important;
-	right: 0 ;
-	bottom: 30% ;
+	right: 0;
+	bottom: 30%;
 	background-color: transparent;
 	transition: opacity 1s;
-	opacity: 0 ;
+	opacity: 0;
 	z-index: 999;
 	pointer-events: none;
 }
@@ -56,9 +55,9 @@ body .container {
 
 .nav .nav-item a {
 	font-family: 'Granjon';
-	text-decoration: none ;
+	text-decoration: none;
 	color: black;
-	
+
 }
 
 /********************************** MAIN PAGE **********************************/
@@ -88,17 +87,23 @@ html {
 	justify-content: center;
 	align-items: center;
 	background: white;
-	
+
 }
 
 .container-fluid section .content {
 	max-width: max-content;
-	
+
 }
 
-.projLinks{
+.projLinks {
 	text-decoration: none;
-	color:steelblue;
+	color: steelblue;
+	font-weight: 700;
+}
+
+.projLinksSkills {
+	text-decoration: none;
+	color: rgb(189, 2, 2);
 	font-weight: 700;
 }
 
@@ -110,12 +115,12 @@ html {
 	font-size: 75px;
 	letter-spacing: .30em;
 	color: #000000;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+		0px 8px 13px rgba(0, 0, 0, 0.1),
+		0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.sweCaption{
+.sweCaption {
 	font-family: 'Granjon';
 	font-style: normal;
 	font-size: 2rem;
@@ -123,33 +128,33 @@ html {
 
 @keyframes sparkle {
 	0% {
-	  left: -100px;
+		left: -100px;
 	}
+
 	100% {
-	  left: calc(100% + 100px);
+		left: calc(100% + 100px);
 	}
-  }
-  
-  .sparkle-effect {
+}
+
+.sparkle-effect {
 	position: relative;
 	overflow: hidden;
-  }
-  
-  .sparkle-effect::before {
+}
+
+.sparkle-effect::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: -100px;
 	width: 100px;
 	height: 100%;
-	background: linear-gradient(
-	  to right,
-	  rgba(255, 255, 255, 0) 0%,
-	  rgba(255, 255, 255, 0.8) 50%,
-	  rgba(255, 255, 255, 0) 100%
-	);
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0.8) 50%,
+			rgba(255, 255, 255, 0) 100%);
 	animation: sparkle 4s linear infinite;
-  }
+}
+
 /* Enso circle */
 #ensoCircle {
 	width: 400px;
@@ -165,7 +170,7 @@ html {
 	line-height: 220%;
 	letter-spacing: 0.15em;
 	color: #000000;
-	
+
 }
 
 /* Accordiion */
@@ -181,13 +186,13 @@ html {
 	color: #000000;
 	position: relative;
 	cursor: pointer;
-	
+
 }
 
-#expText{
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+#expText {
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+		0px 8px 13px rgba(0, 0, 0, 0.1),
+		0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .accordLinks {
@@ -263,7 +268,7 @@ summary {
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 	transition: 0.5s;
-	
+
 }
 
 .accordion .contentBx .indexNum {
@@ -281,7 +286,7 @@ summary {
 	overflow-y: auto;
 }
 
-.skillsContent{
+.skillsContent {
 	position: relative;
 	height: 0;
 	overflow: hidden;
@@ -289,7 +294,7 @@ summary {
 	overflow-y: auto;
 }
 
-.projectsContent{
+.projectsContent {
 	position: relative;
 	height: 0;
 	overflow: hidden;
@@ -314,10 +319,10 @@ summary {
 	margin-left: 3px !important;
 }
 
-.resume{
+.resume {
 	vertical-align: middle;
 	text-decoration: none;
-	color:steelblue;
+	color: steelblue;
 	font-weight: 700;
 }
 
@@ -355,8 +360,8 @@ summary {
 	letter-spacing: 0.05em;
 	color: #000000;
 	margin-top: 25px !important;
-	font-size: clamp(13px, 3vw, 16px);	
-	
+	font-size: clamp(13px, 3vw, 16px);
+
 }
 
 /********************************** PROJECTS PAGE **********************************/
@@ -395,9 +400,11 @@ summary {
 .PC4 {
 	background: url('./assets/img/javaProj.png') center / cover !important;
 }
+
 .PC5 {
 	background: url('./assets/img/spellchecker-pic.png') center / cover !important;
 }
+
 .PC6 {
 	background: url('./assets/img/codehub.png') center / cover !important;
 }
@@ -448,7 +455,7 @@ summary {
 	line-height: 220%;
 	letter-spacing: 0.15em;
 	color: #000000;
-	text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
 }
 
 .tabs {
@@ -573,50 +580,54 @@ summary {
 /*Handle dark mode*/
 /* Define CSS variables for colors */
 :root {
-	--text-color: black !important; /* Default text color */
-	--background-color: white; /* Default background color */
-  }
-  
-  /* Dark mode */
-  @media (prefers-color-scheme: dark) {
+	--text-color: black !important;
+	/* Default text color */
+	--background-color: white;
+	/* Default background color */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
 	:root {
-	  --text-color: white !; /* Text color for dark mode */
-	  --background-color: #000000; /* Background color for dark mode */
+		--text-color: white !;
+		/* Text color for dark mode */
+		--background-color: #000000;
+		/* Background color for dark mode */
 	}
-  }
-  
-  /* Use CSS variables for text and background colors */
-  body {
+}
+
+/* Use CSS variables for text and background colors */
+body {
 	color: var(--text-color);
 	background-color: var(--background-color);
-  }
-  
-  /* Update text and background colors for specific elements */
-  .nav .nav-item a {
+}
+
+/* Update text and background colors for specific elements */
+.nav .nav-item a {
 	color: var(--text-color) !important;
-  }
-  
-  /* Add dark mode styles for other elements as needed */
-  /* For example, update card backgrounds */
-  .card {
+}
+
+/* Add dark mode styles for other elements as needed */
+/* For example, update card backgrounds */
+.card {
 	background-color: var(--background-color) !important;
 	/* Add more styles for dark mode as needed */
-  }
-  
-  /* Update text colors for different sections */
-  #tuDinh,
-  #contents,
-  .aboutSummary,
-  .projectsSummary,
-  .expSummary,
-  .indexNum,
-  .aboutDesc,
-  .projects,
-  .experience,
-  .tabHeader,
-  .treasTitle,
-  .treasDuration,
-  .treasDesc,
-  .tabHeader {
+}
+
+/* Update text colors for different sections */
+#tuDinh,
+#contents,
+.aboutSummary,
+.projectsSummary,
+.expSummary,
+.indexNum,
+.aboutDesc,
+.projects,
+.experience,
+.tabHeader,
+.treasTitle,
+.treasDuration,
+.treasDesc,
+.tabHeader {
 	color: var(--text-color) !important;
-  }
+}

@@ -15,42 +15,42 @@ const Home = () => {
           data-aos-duration="2000"
         >
 
-        <div className="row">
-          {/* LEFT COLUMN */}
-          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-            {/* Name */}
-            <div className="row mb-5">
-              <div className="col d-flex justify-content-center">
-                <h1 id="tuDinh">Tu Dinh</h1>               
+          <div className="row">
+            {/* LEFT COLUMN */}
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+              {/* Name */}
+              <div className="row mb-5">
+                <div className="col d-flex justify-content-center">
+                  <h1 id="tuDinh">Tu Dinh</h1>
+                </div>
+                <SoftwareDeveloperText />
               </div>
-              <SoftwareDeveloperText/>
-            </div>
 
-            {/* Logo */}
-            <div className="row">
-              <div className="col d-flex justify-content-center">
-                <img src={EnsoCircle} alt="https://tudinh.me/" id="ensoCircle" />
+              {/* Logo */}
+              <div className="row">
+                <div className="col d-flex justify-content-center">
+                  <img src={EnsoCircle} alt="https://tudinh.me/" id="ensoCircle" />
+                </div>
               </div>
             </div>
-          </div>
             {/* RIGHT COLUMN */}
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-            {/* Contents title */}
-            <div className="row mb-5">
-              <div className="col d-flex justify-content-center">
-                <p id="contents">contents</p>
+              {/* Contents title */}
+              <div className="row mb-5">
+                <div className="col d-flex justify-content-center">
+                  <p id="contents">contents</p>
+                </div>
               </div>
+
+              {/* Accordion */}
+              <Accordion />
             </div>
-
-            {/* Accordion */}
-            <Accordion />
           </div>
-        </div>
 
 
-          
-      
-          
+
+
+
         </div>
       </section>
     </>
