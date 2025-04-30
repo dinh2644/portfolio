@@ -8,7 +8,7 @@ export const ExpList = [
     name: "U.S. Treasury",
     img: Bank,
     role: "Software Developer Intern @ Department of Treasury",
-    period: "Jun 2022 - PRESENT",
+    period: "Jun 2022 - January 2025",
     desc: [
       "Wrote PowerShell scripts to automate tasks such as converting 500+ Excel columns into hyperlinks resulting in convenient access to relevant information based on each specific link.",
       "Deployed web forms within SharePoint using C# and ASP.NET, interacting with SQL Server, and utilizing Microsoft IIS for hosting and deployment.",
