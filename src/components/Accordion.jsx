@@ -70,7 +70,7 @@ const Accordion = () => {
                         title="GitHub"
                       />
                     </a>
-                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1iiHJVk_vYsTwCAHQGpStenIjaFXqEiHx/view?usp=sharing">Resume</a></strong>
+                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1flhMSE96LCBpMv-eOukYabIseovLp58T/view?usp=sharing">Resume</a></strong>
                   </span>
 
                 </p>
@@ -104,8 +104,8 @@ const Accordion = () => {
                 </div>
                 <div className="projectsContent aboutDesc">
                   <ul>
-                    <li className="mb-2">- <span className="projLinks">Basic-Event-Notification-System</span>: a distributed event notification system where multiple nodes can broadcast events (like stock price changes or sports scores) to other nodes. Ensure events are reliably propagated across nodes with basic mechanisms for message ordering and duplication prevention. </li>
-                    <li className="mb-2">- <span className="projLinks">LiveLingo</span>: a transcript translation web app to make non-English YouTube content accessible to English-speaking audiences. </li>
+                    <li className="mb-2">- <span className="projLinks">Event-Notification-System</span>: a basic ecommerce microservice architecture using a distributed event notification pattern for order placed events with basic mechanisms for event ordering and duplication prevention. </li>
+                    <li className="mb-2">- <span className="projLinks">Translation-Study-Tool</span>: a transcript translation web app to make non-English YouTube content accessible to English-speaking audiences. </li>
                     <li>- <span className="projLinks">Password-Manager</span>: a MERN stack CRUD web app, allowing users to create and store account information through cards for easy lookup. Also implements "Bcrypt" for user authentication and storing salted + hashed passwords.</li>
 
                   </ul>
