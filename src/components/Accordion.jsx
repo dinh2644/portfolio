@@ -70,7 +70,7 @@ const Accordion = () => {
                         title="GitHub"
                       />
                     </a>
-                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1nfADJh6LdvJImwmtQL69BrdnDUjR06uk/view?usp=sharing">Resume</a></strong>
+                    <strong><a className="resume" target="_blank" href="https://drive.google.com/file/d/1zOb_zssg7YwtumyqaFDRd7U3EHsHSGsv/view">Resume</a></strong>
                   </span>
 
                 </p>
