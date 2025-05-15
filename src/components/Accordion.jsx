@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Envelope from "../assets/img/envelope.svg";
 import LinkedIn from "../assets/img/linkedin.png";
 import GitHub from "../assets/img/github.svg";
@@ -87,9 +87,10 @@ const Accordion = () => {
                 Skills <span className="indexNum">25</span>
               </div>
               <div className="skillsContent aboutDesc content">
-                - <strong className="projLinksSkills">Languages:</strong> JavaScipt, Python, GoLang, C++, C#, C, SQL, Java <br />
-                - <strong className="projLinksSkills">Software and DB:</strong> SQL Server, SharePoint, MongoDB, Supabase, Firebase <br />
-                - <strong className="projLinksSkills">Additional:</strong> HTML/CSS/Bootstrap/Tailwind CSS, React/Next.js, Git, GitHub, FastAPI, BullMQ/Redis, Gemini API <br />
+                - <strong className="projLinksSkills">Languages:</strong> JavaScript/TypeScript, Python, Go, C++, C, C#, Java <br />
+                - <strong className="projLinksSkills">Databases:</strong> SQL Server, MongoDB, Supabase, Firebase, Redis <br />
+                - <strong className="projLinksSkills">Web Development:</strong> HTML/CSS, Bootstrap, Tailwind CSS, React, Next.js, Node.js, Express.js <br />
+                - <strong className="projLinksSkills">Tools & Frameworks:</strong> Docker, Git, GitHub, FastAPI, BullMQ, Kafka, SharePoint, Postman, Power Apps <br />
                 - <strong className="projLinksSkills">Certifications:</strong> Lyft Back-End Engineering Job Sim, CodePath's Intermediate Web Development
               </div>
             </div>
@@ -104,9 +105,10 @@ const Accordion = () => {
                 </div>
                 <div className="projectsContent aboutDesc">
                   <ul>
-                    <li className="mb-2">- <span className="projLinks">Event-Notification-System</span>: a basic ecommerce microservice architecture using a distributed event notification pattern for order placed events with basic mechanisms for event ordering and duplication prevention. </li>
-                    <li className="mb-2">- <span className="projLinks">Translation-Study-Tool</span>: a transcript translation web app to make non-English YouTube content accessible to English-speaking audiences. </li>
-                    <li>- <span className="projLinks">Password-Manager</span>: a MERN stack CRUD web app, allowing users to create and store account information through cards for easy lookup. Also implements "Bcrypt" for user authentication and storing salted + hashed passwords.</li>
+                    <li className="mb-2">- <span className="projLinks">Distributed Event Notification System</span>: an ecommerce microservice architecture using event-driven communication and a choreography-based Saga to coordinate order workflows, ensuring event order and deduplication </li>
+                    <li className="mb-2">- <span className="projLinks">Translation Study Tool</span>: a transcript translation web app to make non-English YouTube content accessible to English-speaking audiences </li>
+                    <li className="mb-2">- <span className="projLinks">Multi-threaded Web Proxy Server</span>: a multi-threaded proxy server utilizing socket programming for TCP connections and HTTP request handling for HTML, JPEG, and PDF files from a web server </li>
+                    <li>- <span className="projLinks">Password Manager</span>: a web app that lets users securely store, manage, and access their account credentials through an organized, card-style interface </li>
 
                   </ul>
                 </div>

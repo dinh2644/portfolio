@@ -1,8 +1,6 @@
 import Accordion from "./Accordion";
 import SideNav from "./SideNav";
-import EnsoCircle from "../assets/img/enso.png";
-import React from "react";
-import SoftwareDeveloperText from "./SoftwareDeveloperText";
+import Portrait from "./Portrait";
 
 const Home = () => {
   return (
@@ -17,19 +15,22 @@ const Home = () => {
 
           <div className="row">
             {/* LEFT COLUMN */}
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-              {/* Name */}
-              <div className="row mb-5">
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 ">
+              {/* Portrait */}
+              <div className="row mb-3">
                 <div className="col d-flex justify-content-center">
+                  <Portrait />
+                </div>
+              </div>
+              {/* Sub-data */}
+              <div className="row mb-5">
+                {/* Name */}
+                <div className="col d-flex justify-content-center text-center mb-2">
                   <h1 id="tuDinh">Tu Dinh</h1>
                 </div>
-                <SoftwareDeveloperText />
-              </div>
-
-              {/* Logo */}
-              <div className="row">
-                <div className="col d-flex justify-content-center">
-                  <img src={EnsoCircle} alt="https://tudinh.me/" id="ensoCircle" />
+                {/* School  */}
+                <div className="col-12 d-flex justify-content-center text-center">
+                  <p className="schoolCaption">Software Developer</p>
                 </div>
               </div>
             </div>

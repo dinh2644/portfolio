@@ -26,11 +26,8 @@
 }
 
 /* Prevent side scrolling on mobile view */
-
 body .container {
 	overflow: hidden !important;
-
-
 }
 
 /* Sticky side nav */
@@ -118,12 +115,6 @@ html {
 	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
 		0px 8px 13px rgba(0, 0, 0, 0.1),
 		0px 18px 23px rgba(0, 0, 0, 0.1);
-}
-
-.sweCaption {
-	font-family: 'Granjon';
-	font-style: normal;
-	font-size: 2rem;
 }
 
 @keyframes sparkle {
@@ -553,9 +544,7 @@ summary {
 
 .fadeInUp {
 	animation: fadeInUp !important;
-	/* referring directly to the animation's @keyframe declaration */
 	animation-duration: 1s !important;
-	/* don't forget to set a duration! */
 }
 
 #phoneNav {
@@ -578,43 +567,32 @@ summary {
 }
 
 /*Handle dark mode*/
-/* Define CSS variables for colors */
 :root {
 	--text-color: black !important;
-	/* Default text color */
 	--background-color: white;
-	/* Default background color */
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: white !;
-		/* Text color for dark mode */
 		--background-color: #000000;
-		/* Background color for dark mode */
 	}
 }
 
-/* Use CSS variables for text and background colors */
 body {
 	color: var(--text-color);
 	background-color: var(--background-color);
 }
 
-/* Update text and background colors for specific elements */
 .nav .nav-item a {
 	color: var(--text-color) !important;
 }
 
-/* Add dark mode styles for other elements as needed */
-/* For example, update card backgrounds */
 .card {
 	background-color: var(--background-color) !important;
-	/* Add more styles for dark mode as needed */
 }
 
-/* Update text colors for different sections */
 #tuDinh,
 #contents,
 .aboutSummary,
@@ -630,4 +608,28 @@ body {
 .treasDesc,
 .tabHeader {
 	color: var(--text-color) !important;
+}
+
+/********************************** Portrait **********************************/
+.portrait {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.portrait img {
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+	object-fit: cover;
+	display: block;
+	margin: 50px auto;
+
+}
+
+.schoolCaption {
+	font-family: 'Granjon';
+	font-style: normal;
+	font-size: 1.7rem;
 }
